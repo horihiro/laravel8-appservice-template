@@ -23,6 +23,8 @@ The following configuration is needed to make this work on Azure App Service.
 | `SCM_DO_BUILD_DURING_DEPLOYMENT` | `true`                 |
 | `PRE_BUILD_SCRIPT_PATH`          | `scripts/prebuild.sh`  |
 
+**Note:** Using `scripts/prebuild.sh` in `PRE_BUILD_SCRIPT_PATH` is a workaround for https://github.com/microsoft/Oryx/issues/1100 .
+
 ----
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
