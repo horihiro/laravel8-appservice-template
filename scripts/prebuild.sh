@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "===== pre-build command ===="
 DEBIAN_FLAVOR=$(cat /etc/os-release | grep "VERSION_CODENAME" | sed "s/VERSION_CODENAME=//")
 
 update_platform () {
@@ -23,3 +24,5 @@ update_platforms () {
 }
 
 update_platforms "/tmp/oryx/platforms/"
+
+echo "===== pre-build command ===="
