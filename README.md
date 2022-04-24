@@ -14,14 +14,14 @@ The following configuration is needed to make this work on Azure App Service.
 | `Minor version`   | `PHP 8.0`                                  |
 | `Startup Command` | `sh /home/site/wwwroot/scripts/startup.sh` |
 
-#### In `App Settings` tab
+#### In `Application settings` tab
 
-| Name                             | Value                    |
-| -------------------------------- | ------------------------ |
+| Name                             | Value                  |
+| -------------------------------- | ---------------------- |
 | `APP_KEY`                        | (a value you generate) |
-| `ENABLE_ORYX_BUILD`              | `true`                   |
-| `SCM_DO_BUILD_DURING_DEPLOYMENT` | `true`                   |
-| `PRE_BUILD_SCRIPT_PATH`          | `scripts/prebuild.sh`    |
+| `ENABLE_ORYX_BUILD`              | `true`                 |
+| `SCM_DO_BUILD_DURING_DEPLOYMENT` | `true`                 |
+| `PRE_BUILD_SCRIPT_PATH`          | `scripts/prebuild.sh`  |
 
 ----
 
