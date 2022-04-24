@@ -1,3 +1,30 @@
+# Laravel template for Azure App Service
+
+## Deploy to Azure App Service
+
+### Configuration
+The following configuration is needed to make this work on Azure App Service.
+
+#### In `General settings` tab
+
+| Name              | Value                                      |
+| ----------------- | ------------------------------------------ |
+| `Stack`           | `PHP`                                      |
+| `Major version`   | `PHP 8`                                    |
+| `Minor version`   | `PHP 8.0`                                  |
+| `Startup Command` | `sh /home/site/wwwroot/scripts/startup.sh` |
+
+#### In `App Settings` tab
+
+| Name                             | Value                    |
+| -------------------------------- | ------------------------ |
+| `APP_KEY`                        | (a value you generate) |
+| `ENABLE_ORYX_BUILD`              | `true`                   |
+| `SCM_DO_BUILD_DURING_DEPLOYMENT` | `true`                   |
+| `PRE_BUILD_SCRIPT_PATH`          | `scripts/prebuild.sh`    |
+
+----
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
