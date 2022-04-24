@@ -14,6 +14,8 @@ The following configuration is needed to make this work on Azure App Service.
 | `Minor version`   | `PHP 8.0`                                  |
 | `Startup Command` | `sh /home/site/wwwroot/scripts/startup.sh` |
 
+**Note:** Using `Startup Command` is for setting the routing from Nginx to Laravel. See https://docs.microsoft.com/en-us/answers/questions/542749/deploying-an-app-service-with-laravel-8-and-php-8.html
+
 #### In `Application settings` tab
 
 | Name                             | Value                  |
